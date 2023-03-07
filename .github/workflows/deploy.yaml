@@ -93,7 +93,6 @@ jobs:
         dns-name-label: lab-crescer-caetano-braga
         image: caetanobraga/javacrescer:latest
         cpu: 1
-        memory: 1
         registry-login-server: docker.io
         registry-username: ${{ secrets.REGISTRY_USERNAME }}
         registry-password: ${{ secrets.REGISTRY_PASSWORD }}
