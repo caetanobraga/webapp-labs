@@ -29,8 +29,8 @@ jobs:
     steps:
     - name: Git checkout
       uses: actions/checkout@v3
-    - name: Adicionando Permissari para o mvnw
-      run: chmodm +x mvnw
+    - name: Adicionando Permissao para o mvnw
+      run: chmod +x mvnw
     - name: Análise SonarCloud
       run: ./mvnw -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=lab-crescer-pipeline
       env: 
